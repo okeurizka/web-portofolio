@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakim | Full-Stack Developer & Writer</title>
+    
+    <!-- Tailwind CSS (via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Space Mono (Untuk kesan mesin tik / koding) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Konfigurasi Tema Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        mono: ['"Space Mono"', 'monospace'],
+                    },
+                    colors: {
+                        dark: '#0a0a0a',     // Hitam pekat untuk liminal space
+                        light: '#e5e5e5',    // Putih keabu-abuan untuk teks
+                        accent: '#2a2a2a'    // Abu-abu gelap untuk garis brutalism
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Pengaturan Brutalism Minimalis */
+        body {
+            background-color: theme('colors.dark');
+            color: theme('colors.light');
+        }
+        .brutalist-border {
+            border: 1px solid theme('colors.accent');
+        }
+        /* Efek highlight teks */
+        ::selection {
+            background-color: theme('colors.light');
+            color: theme('colors.dark');
+        }
+    </style>
+</head>
+<body class="font-mono antialiased overflow-x-hidden">
+
+    <!-- Navigasi -->
+    <nav class="fixed top-0 w-full bg-dark border-b border-accent z-50">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center text-sm">
+            <a href="#" class="font-bold text-gray-500 hover:text-white transition-colors tracking-widest">HKM.</a>
+            <div class="space-x-6 hidden md:block">
+                <a href="#about" class="text-gray-500 hover:text-white transition-colors">About</a>
+                <a href="#capabilities" class="text-gray-500 hover:text-white transition-colors">Capabilities</a>
+                <a href="#achievements" class="text-gray-500 hover:text-white transition-colors">Achievements</a>
+                <a href="#contact" class="text-gray-500 hover:text-white transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Konten Utama -->
+    <main class="max-w-4xl mx-auto px-6 pt-32 pb-24 space-y-32">
+        
+        <!-- 1. Hero Section -->
+        <section class="min-h-[65vh] flex flex-col justify-center">
+            <p class="text-xs text-gray-500 mb-6 tracking-widest">// INITIALIZE_PORTFOLIO</p>
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tighter mb-8 uppercase leading-tight">
+                Okeu Rizka<br>Abdulhakim
+            </h1>
+            <div class="border-l-4 border-light pl-6">
+                <h2 class="text-lg md:text-xl text-gray-500 tracking-wide">
+                    Full-Stack Developer & Writer
+                </h2>
+            </div>
+        </section>
+
+        <!-- 2. About Me -->
+        <section id="about" class="brutalist-border p-8 md:p-12 relative mt-16">
+            <!-- Label Brutalism -->
+            <div class="absolute top-0 left-0 bg-light text-dark px-4 py-1 text-xs font-bold -translate-y-1/2 translate-x-6 md:translate-x-10">
+                01. ABOUT ME
+            </div>
+            <p class="leading-relaxed text-black md:text-lg">
+                Halo, namaku Okeu Rizka Abdulhakim (Okeu). [NIM: 26051204180] | Program Studi Teknik Informatika.
+                <br><br>
+                Bagiku, layar kosong adalah ruang untuk membangun realitas baru—baik melalui barisan kode maupun untaian kata. Sebagai mahasiswa Informatika, aku memiliki ketertarikan mendalam pada pengembangan perangkat lunak (Full-Stack). Di luar logika pemrograman, aku menghabiskan waktu mengeksplorasi literatur, filosofi, dan menulis fiksi beraliran surealis/eksperimental. Saat ini, aku aktif mengembangkan proyek web dan mempublikasikan tulisan-tulisanku, mencari titik temu antara arsitektur sistem yang efisien dan penceritaan yang kuat.
+            </p>
+        </section>
+
+        <!-- 3. What I Can Do -->
+        <section id="capabilities" class="space-y-10">
+            <h3 class="text-2xl font-bold uppercase border-b border-accent pb-4 tracking-widest text-gray-500">02. What I Can Do</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div class="brutalist-border bg-accent/20 p-6 hover:bg-accent/60 transition-colors duration-300 group">
+                    <h4 class="font-bold text-white mb-3 group-hover:pl-2 transition-all">> Full-Stack Web Dev</h4>
+                    <p class="text-sm text-black leading-relaxed">Membangun antarmuka yang responsif dan sistem back-end yang tangguh menggunakan Laravel, Vue.js, dan Tailwind CSS.</p>
+                </div>
+
+                <div class="brutalist-border bg-accent/20 p-6 hover:bg-accent/60 transition-colors duration-300 group">
+                    <h4 class="font-bold text-white mb-3 group-hover:pl-2 transition-all">> Mobile App Dev</h4>
+                    <p class="text-sm text-black leading-relaxed">Mengembangkan aplikasi lintas platform menggunakan Flutter.</p>
+                </div>
+
+                <div class="brutalist-border bg-accent/20 p-6 hover:bg-accent/60 transition-colors duration-300 group">
+                    <h4 class="font-bold text-white mb-3 group-hover:pl-2 transition-all">> Version Control</h4>
+                    <p class="text-sm text-black leading-relaxed">Terbiasa mengelola kode dan berkolaborasi menggunakan Git & GitHub.</p>
+                </div>
+
+                <div class="brutalist-border bg-accent/20 p-6 hover:bg-accent/60 transition-colors duration-300 group">
+                    <h4 class="font-bold text-white mb-3 group-hover:pl-2 transition-all">> Creative Writing</h4>
+                    <p class="text-sm text-black leading-relaxed">Menulis fiksi eksperimental, esai, dan puisi. Keahlian dalam world-building ini membantuku dalam merancang User Experience (UX) yang lebih berpusat pada manusia.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. Achievements -->
+        <section id="achievements" class="space-y-10">
+            <h3 class="text-2xl font-bold uppercase border-b border-accent pb-4 tracking-widest text-gray-500">03. Achievements</h3>
+            <div class="space-y-8 pl-2 md:pl-4">
+                
+                <!-- Timeline item -->
+                <div class="border-l border-accent pl-6 relative before:content-[''] before:absolute before:w-2.5 before:h-2.5 before:bg-light before:left-[-5.5px] before:top-2">
+                    <h4 class="font-bold text-white md:text-lg">Software Development Intern (2025)</h4>
+                    <span class="text-xs text-gray-500 bg-accent px-2 py-1 mt-2 inline-block">PT Nakula Sadewa Indonesia Corp Head Office</span>
+                    <p class="text-sm text-black mt-3 leading-relaxed">Terlibat langsung dalam pengembangan "Taskula", sebuah platform manajemen tugas. Bertanggung jawab dalam implementasi fitur dan penyelesaian bug dalam tim.</p>
+                </div>
+
+                <!-- Timeline item -->
+                <div class="border-l border-accent pl-6 relative before:content-[''] before:absolute before:w-2.5 before:h-2.5 before:bg-light before:left-[-5.5px] before:top-2">
+                    <h4 class="font-bold text-white md:text-lg">Active Tech & Fiction Writer</h4>
+                    <span class="text-xs text-gray-500 bg-accent px-2 py-1 mt-2 inline-block">2025 - Sekarang | Medium</span>
+                    <p class="text-sm text-black mt-3 leading-relaxed">Konsisten mempublikasikan karya tulis fiksi, puisi, dan esai eksploratif di platform Medium (@okeurizkaa22), mengeksplorasi tema-tema filosofis dan liminal space.</p>
+                </div>
+
+                <!-- Timeline item -->
+                <div class="border-l border-accent pl-6 relative before:content-[''] before:absolute before:w-2.5 before:h-2.5 before:bg-light before:left-[-5.5px] before:top-2">
+                    <h4 class="font-bold text-white md:text-lg">Independent Project: "Something Different"</h4>
+                    <span class="text-xs text-gray-500 bg-accent px-2 py-1 mt-2 inline-block">Sedang Berjalan</span>
+                    <p class="text-sm text-black mt-3 leading-relaxed">Mengembangkan proyek antologi cerita dengan world-building berbasis cosmic horror dan elemen tarot.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. Contact -->
+        <section id="contact" class="brutalist-border p-8 md:p-16 text-center space-y-8 relative overflow-hidden">
+            <!-- Efek dekorasi liminal -->
+            <div class="absolute -right-15 -bottom-10 text-[10rem] font-bold text-accent/20 select-none z-0">
+                ORA
+            </div>
+            
+            <div class="relative z-10">
+                <h3 class="text-2xl md:text-3xl font-bold uppercase mb-4 text-gray-500">04. Open Connection</h3>
+                <p class="text-black max-w-lg mx-auto text-sm md:text-base leading-relaxed">
+                    Tertarik untuk berkolaborasi dalam proyek perangkat lunak atau sekadar bertukar pikiran tentang literatur dan absurdisme? Mari terhubung:
+                </p>
+                
+                <div class="flex flex-wrap justify-center gap-4 mt-8">
+                    <a href="mailto:okeurizkaa22@gmail.com" class="px-6 py-3 border border-light hover:bg-light hover:text-dark transition-all duration-300 uppercase text-xs tracking-widest font-bold">Email</a>
+                    <a href="https://github.com/okeurizka" class="px-6 py-3 border border-light hover:bg-light hover:text-dark transition-all duration-300 uppercase text-xs tracking-widest font-bold">GitHub</a>
+                    <a href="https://www.linkedin.com/in/okeu-abdulhakim-2b864b360/" class="px-6 py-3 border border-light hover:bg-light hover:text-dark transition-all duration-300 uppercase text-xs tracking-widest font-bold">LinkedIn</a>
+                    <a href="https://medium.com/@okeurizkaa22" target="_blank" class="px-6 py-3 border border-light hover:bg-light hover:text-dark transition-all duration-300 uppercase text-xs tracking-widest font-bold">Medium</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-accent text-center py-8 text-xs text-gray-600 tracking-widest">
+        <p>&copy; 2026 Okeu Rizka Abdulhakim. Crafted in Surabaya.</p>
+    </footer>
+
+</body>
+</html>
